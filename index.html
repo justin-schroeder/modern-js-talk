@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./src/main.mjs"></script>
+    <script type="module" src="./src/cart-view.mjs"></script>
+    <title>Cart example • Design patterns for modern JavaScript</title>
+  </head>
+  <body>
+    <header>
+      <img src="/img/logo.png" alt="Books Logo" class="logo" />
+      <ul>
+        <li>Books</li>
+        <li>Contact</li>
+        <li>Checkout</li>
+      </ul>
+      <button id="cart" class="cart">
+        <img src="/img/cart.svg" width="80" height="70" alt="Cart" />
+      </button>
+    </header>
+    <section>
+      <ul class="products">
+        <li class="product">
+          <img src="/img/lotr.png" alt="Lord of the Rings book cover">
+          <div class="product-title">Lord of the Rings</div>
+          <div class="product-price">$19.00</div>
+          <button data-product="lotr">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="/img/foundation.png" alt="Foundation book cover">
+          <div class="product-title">Foundation</div>
+          <div class="product-price">$15.00</div>
+          <button data-product="foundation">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="/img/arabian.png" alt="Arabian Nights book cover">
+          <div class="product-title">Arabian Nights</div>
+          <div class="product-price">$9.00</div>
+          <button data-product="arabian">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="/img/hobbit.png" alt="The Hobbit book cover">
+          <div class="product-title">The Hobbit</div>
+          <div class="product-price">$12.00</div>
+          <button data-product="hobbit">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="/img/samurai.png" alt="The Hobbit book cover">
+          <div class="product-title">The Last Samurai</div>
+          <div class="product-price">$17.00</div>
+          <button data-product="samurai">Add to cart</button>
+        </li>
+        <li class="product">
+          <img src="/img/cuckoo.png" alt="Saga of Cuckoo book cover">
+          <div class="product-title">Saga of Cuckoo</div>
+          <div class="product-price">$5</div>
+          <button data-product="cuckoo">Add to cart</button>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      Made by <a href="https://www.twitter.com/jpschroeder">@jpschroeder</a>, no rights reserved.
+    </footer>
+  </body>
+</html>
